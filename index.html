@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Astro Weight Calculator</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+  </head>
+  <body>
+     <!-- Write your markup here  -->
+
+     <div class="container mt-5">
+
+      <h1 class="text-center">Astro Weight Calculator</h1>
+      
+      <div class="row mt-4">
+        <input id="user-weight" type="text" placeholder="Weight (lbs)" class="col p-3 mr-3"/>
+        <select id="planets" type="dropdown" class="col p-3 ml-3"></select>
+      </div>
+
+      <div class="row mt-4">
+        <button id="calculate-button" class="col-4 pt-3 pb-3 btn btn-primary">Calculate Weight</button>
+        <span class="col-1"></span>
+        <div class="col-7 pt-3 card text-center bg-success"><p id="output" class="text-white"></p></div>
+      </div>
+
+      <div class="row mt-4">
+
+        <div class="col-4 pt-2 pb-2 card bg-danger text-center">
+          <label for="rip-pluto" class="text-white">RIP Pluto
+            <input type="checkbox" id="rip-pluto" name="rip-pluto" value="">
+          </label>
+        </div>
+
+        <span class="col-1"></span>
+        
+        <input id="new-planet-name" type="text" placeholder="New planet name" class="col p-3 mr-2" />
+        <input id="new-planet-multi" type="text" placeholder="New planet multiplier" class="col p-3 mr-2" />
+        <button id="new-planet-button" class="col pt-3 pb-3 btn btn-secondary">Add New Planet</button>
+
+      </div>
+
+     </div>
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
